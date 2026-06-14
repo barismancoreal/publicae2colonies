@@ -41,21 +41,15 @@ local alarm = nil                   -- Used to update monitor for errors.
 
 -- [BLACKLIST & WHITELIST LOOKUPS] --------------------------------------------------------------------------------------------------------
 -- blacklistedTags: all items matching the given tags are skipped, they do not export.
---local blacklistedTags = {
-  --["c:foods"] = true, -- I've noticed not all foods use tags, like at all! :(
-  --["c:tools"] = true,
---}
+local blacklistedTags = {
+  , -- I've noticed not all foods use tags, like at all! :(
+}
 
 -- whitelistItemName: specific item names can be whitelisted.
 -- If c:foods is blacklisted, whitelist minecraft:beef so colonists can cook into steaks!
 -- QUESTION: Maybe no food should be whitelisted, the resturant seems to over-request food to cook up, filling warehouse??
---local whitelistItemName = {
-  --["minecraft:cod"] = true,
-  --["minecraft:beef"] = true,
-  --["minecraft:carrot"] = true,
-  --["minecraft:potato"] = true,
-  --["minecolonies:apple_pie"] = true,
---}
+local whitelistItemName = {
+}
 
 -- [TOOLS & ARMOUR LOOKUPS]----------------------------------------------------------------------------------------------------
 -- QUESTION: It maybe better to just have colonists make tools and armour?
