@@ -1,5 +1,5 @@
-local scriptName = "AE2 Colony"
-local scriptVersion = "0.4.1"
+local scriptName = "CE2"
+local scriptVersion = "3169"
 local apVersions = {
   ["0.7.51b"] = true, -- script can crash if colonists are missing tools/weapons/armour
   ["0.7.61b"] = true  -- best version to use at the moment July 15'25
