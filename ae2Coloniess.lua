@@ -42,7 +42,7 @@ local alarm = nil                   -- Used to update monitor for errors.
 -- [BLACKLIST & WHITELIST LOOKUPS] --------------------------------------------------------------------------------------------------------
 -- blacklistedTags: all items matching the given tags are skipped, they do not export.
 local blacklistedTags = {
-  ["c:foods"] = true, -- I've noticed not all foods use tags, like at all! :(
+  ["c:foods"] = false, -- I've noticed not all foods use tags, like at all! :(
   --["c:tools"] = true,
 }
 
@@ -51,10 +51,10 @@ local blacklistedTags = {
 -- QUESTION: Maybe no food should be whitelisted, the resturant seems to over-request food to cook up, filling warehouse??
 local whitelistItemName = {
   --["minecraft:cod"] = true,
-  ["minecraft:beef"] = true,
-  ["minecraft:carrot"] = true,
-  ["minecraft:potato"] = true,
-  ["minecolonies:apple_pie"] = true,
+  ["minecraft:beef"] = false,
+  ["minecraft:carrot"] = false,
+  ["minecraft:potato"] = false,
+  ["minecolonies:apple_pie"] = false,
 }
 
 -- [TOOLS & ARMOUR LOOKUPS]----------------------------------------------------------------------------------------------------
