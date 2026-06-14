@@ -384,7 +384,7 @@ local function tagHandler(requestItem)
       if type(tag) == "string" then
         for blocked in pairs(blacklistedTags) do
           if tag:find("c:foods") then
-            return true, false
+            return true
           end
         end
       end
