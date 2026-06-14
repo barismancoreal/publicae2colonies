@@ -29,9 +29,9 @@ Srendi - Advanced Peripherals dev, fast support for bug troubleshooting!
 ---------------------------------------------------------------------------------------------------------------------]]
 
 -- [USER CONFIG] ------------------------------------------------------------------------------------------------------
-local exportSide = "front"
+local exportSide = "top"
 local craftMaxStack = false         -- Autocraft exact or a stack. ie 3 logs vs 64 logs.
-local scanInterval = 30             -- Probably shouldn't go much lower than 20s...
+local scanInterval = 25             -- Probably shouldn't go much lower than 20s...
 local doLog = false                 -- Leave false unless you have issues. Kinda spammy!
 local doLogExtra = false            -- If true more info printed to log file.
 local logFolder = "ae2Colony_logs"
@@ -41,21 +41,21 @@ local alarm = nil                   -- Used to update monitor for errors.
 
 -- [BLACKLIST & WHITELIST LOOKUPS] --------------------------------------------------------------------------------------------------------
 -- blacklistedTags: all items matching the given tags are skipped, they do not export.
-local blacklistedTags = {
-  ["c:foods"] = true, -- I've noticed not all foods use tags, like at all! :(
+--local blacklistedTags = {
+  --["c:foods"] = true, -- I've noticed not all foods use tags, like at all! :(
   --["c:tools"] = true,
-}
+--}
 
 -- whitelistItemName: specific item names can be whitelisted.
 -- If c:foods is blacklisted, whitelist minecraft:beef so colonists can cook into steaks!
 -- QUESTION: Maybe no food should be whitelisted, the resturant seems to over-request food to cook up, filling warehouse??
-local whitelistItemName = {
+--local whitelistItemName = {
   --["minecraft:cod"] = true,
-  ["minecraft:beef"] = true,
-  ["minecraft:carrot"] = true,
-  ["minecraft:potato"] = true,
-  ["minecolonies:apple_pie"] = true,
-}
+  --["minecraft:beef"] = true,
+  --["minecraft:carrot"] = true,
+  --["minecraft:potato"] = true,
+  --["minecolonies:apple_pie"] = true,
+--}
 
 -- [TOOLS & ARMOUR LOOKUPS]----------------------------------------------------------------------------------------------------
 -- QUESTION: It maybe better to just have colonists make tools and armour?
