@@ -31,7 +31,7 @@ Srendi - Advanced Peripherals dev, fast support for bug troubleshooting!
 -- [USER CONFIG] ------------------------------------------------------------------------------------------------------
 local exportSide = "front"
 local craftMaxStack = false         -- Autocraft exact or a stack. ie 3 logs vs 64 logs.
-local scanInterval = 30             -- Probably shouldn't go much lower than 20s...
+local scanInterval = 22             -- Probably shouldn't go much lower than 20s...
 local doLog = false                 -- Leave false unless you have issues. Kinda spammy!
 local doLogExtra = false            -- If true more info printed to log file.
 local logFolder = "ae2Colony_logs"
@@ -42,7 +42,7 @@ local alarm = nil                   -- Used to update monitor for errors.
 -- [BLACKLIST & WHITELIST LOOKUPS] --------------------------------------------------------------------------------------------------------
 -- blacklistedTags: all items matching the given tags are skipped, they do not export.
 local blacklistedTags = {
-  ["c:foods"] = false, -- I've noticed not all foods use tags, like at all! :(
+  ["c:wrenches"] = true, -- I've noticed not all foods use tags, like at all! :(
   --["c:tools"] = true,
 }
 
@@ -51,10 +51,10 @@ local blacklistedTags = {
 -- QUESTION: Maybe no food should be whitelisted, the resturant seems to over-request food to cook up, filling warehouse??
 local whitelistItemName = {
   --["minecraft:cod"] = true,
-  ["minecraft:beef"] = false,
-  ["minecraft:carrot"] = false,
-  ["minecraft:potato"] = false,
-  ["minecolonies:apple_pie"] = false,
+  ["minecraft:beef"] = true ,
+  ["minecraft:carrot"] = true,
+  ["minecraft:potato"] = true,
+  ["minecolonies:apple_pie"] = true,
 }
 
 -- [TOOLS & ARMOUR LOOKUPS]----------------------------------------------------------------------------------------------------
