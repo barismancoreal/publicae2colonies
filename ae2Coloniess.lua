@@ -29,7 +29,7 @@ Srendi - Advanced Peripherals dev, fast support for bug troubleshooting!
 ---------------------------------------------------------------------------------------------------------------------]]
 
 -- [USER CONFIG] ------------------------------------------------------------------------------------------------------
-local exportSide = "front"
+local exportSide = "top"
 local craftMaxStack = false         -- Autocraft exact or a stack. ie 3 logs vs 64 logs.
 local scanInterval = 22             -- Probably shouldn't go much lower than 20s...
 local doLog = false                 -- Leave false unless you have issues. Kinda spammy!
